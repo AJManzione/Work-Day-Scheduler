@@ -35,13 +35,26 @@
 
 
 .form-input {
-    width: 82%;
+    width: 81.5%;
     height: 100%;
     border: none;
     outline: none;
     font-size: 3.5vw;
     padding-left: 10px;
     background-color: lightseagreen
+}
+
+.form-output-9, .form-output-10, .form-output-11, .form-output-12, .form-output-1, .form-output-2, .form-output-3, .form-output-4, .form-output-5 {
+    font-family: Arvo-regular;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 3.5vw;
+    background-color: lightseagreen;
+    padding-left: 20px;
+
+
 }
 
 .container p {

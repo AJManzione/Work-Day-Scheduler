@@ -11,14 +11,16 @@ var saveFour = $('.save-four');
 var saveFive = $('.save-five');
 
 var userSavedNine = $('input[type="text-9"]');
-var userSavedTen = $('input[type="text"]');
-var userSavedEleven = $('input[type="text"]');
-var userSavedTwelve = $('input[type="text"]');
-var userSavedOne = $('input[type="text"]');
-var userSavedTwo = $('input[type="text"]');
-var userSavedThree = $('input[type="text"]');
-var userSavedFour = $('input[type="text"]');
-var userSavedFive = $('input[type="text"]');
+var userSavedTen = $('input[type="text-10"]');
+var userSavedEleven = $('input[type="text-11"]');
+var userSavedTwelve = $('input[type="text-12"]');
+var userSavedOne = $('input[type="text-1"]');
+var userSavedTwo = $('input[type="text-2"]');
+var userSavedThree = $('input[type="text-3"]');
+var userSavedFour = $('input[type="text-4"]');
+var userSavedFive = $('input[type="text-5"]');
+
+var userDisplayNine = document.querySelector(".form-output-9");
 
 var userInputNine = [];
 var userInputTen = [];
@@ -32,12 +34,130 @@ var userInputFive = [];
 
 // work out the clock that changes the color of the elements in html
 
-saveNine.on('click', function() {
-    
+
+//----------------------------------------------------------9-o-clock-------------------------------------//
+//----Saves user input into local storage
+
+
+function displayUserSaved() {
+var displayNine = localStorage.getItem("saved-9")
+
+userDisplayNine.text(displayNine);
+}
+
+
+saveNine.on('click', function(event) {
+    event.preventDefault();
     $.each(userSavedNine, function() {
         
         userInputNine.push($(this).val())
-        console.log(userInputNine);
+        localStorage.setItem("saved-9", userInputNine);
+        displayUserSaved();
     }
 )});
-// save user text input as local storage
+
+//----------------------------------------------------------10-o-clock------------------------------------//
+//----Saves user input into local storage
+
+saveTen.on('click', function(event) {
+    event.preventDefault();
+    $.each(userSavedTen, function() {
+        
+        userInputTen.push($(this).val())
+        console.log(userInputTen);
+        localStorage.setItem("saved-10", userInputTen);
+    }
+)});
+
+//---------------------------------------------------------11-o-clock-------------------------------------//
+//----Saves user input into local storage
+
+saveEleven.on('click', function(event) {
+    event.preventDefault();
+    $.each(userSavedEleven, function() {
+        
+        userInputEleven.push($(this).val())
+        console.log(userInputEleven);
+        localStorage.setItem("saved-11", userInputEleven);
+    }
+)});
+
+//---------------------------------------------------------12-o-clock-------------------------------------//
+//----Saves user input into local storage
+
+saveTwelve.on('click', function(event) {
+    event.preventDefault();
+    $.each(userSavedTwelve, function() {
+        
+        userInputTwelve.push($(this).val())
+        console.log(userInputTwelve);
+        localStorage.setItem("saved-12", userInputTwelve);
+    }
+)});
+
+//----------------------------------------------------------1-o-clock-------------------------------------//
+//----Saves user input into local storage
+
+saveOne.on('click', function(event) {
+    event.preventDefault();
+    $.each(userSavedOne, function() {
+    
+    
+        userInputOne.push($(this).val())
+        console.log(userInputOne);
+        localStorage.setItem("saved-1", userInputOne);
+    }
+)});
+
+//----------------------------------------------------------2-o-clock-------------------------------------//
+//----Saves user input into local storage
+
+saveTwo.on('click', function(event) {
+    event.preventDefault();
+    $.each(userSavedTwo, function() {
+        
+        userInputTwo.push($(this).val())
+        console.log(userInputTwo);
+        localStorage.setItem("saved-2", userInputTwo);
+    }
+)});
+
+//----------------------------------------------------------3-o-clock-------------------------------------//
+//----Saves user input into local storage
+
+saveThree.on('click', function(event) {
+    event.preventDefault();
+    $.each(userSavedTeh , function() {
+        
+        userInputThree.push($(this).val())
+        console.log(userInputThree);
+        localStorage.setItem("saved-3", userInputThree);
+    }
+)});
+
+//----------------------------------------------------------4-o-clock-------------------------------------//
+//----Saves user input into local storage
+
+saveFour.on('click', function(event) {
+    event.preventDefault();
+    $.each(userSavedFour, function() {
+        
+        userInputFour.push($(this).val())
+        console.log(userInputFour);
+        localStorage.setItem("saved-4", userInputFour);
+    }
+)});
+
+//----------------------------------------------------------5-o-clock-------------------------------------//
+//----Saves user input into local storage
+saveFive.on('click', function(event) {
+    event.preventDefault();
+    $.each(userSavedFive, function() {
+        
+        userInputFive.push($(this).val())
+        console.log(userInputFive);
+        localStorage.setItem("saved-5", userInputFive);
+    }
+)});
+
+
