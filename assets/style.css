@@ -34,7 +34,7 @@
 }
 
 
-input[type='text'] {
+.form-input {
     width: 82%;
     height: 100%;
     border: none;
