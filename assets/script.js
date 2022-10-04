@@ -1,4 +1,4 @@
-$("#date-my").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
+$("#date-my").text(moment().format("dddd, MMMM Do YYYY"));
 
 var NineAm
 var TenAm
