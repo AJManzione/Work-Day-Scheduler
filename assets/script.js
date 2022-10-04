@@ -10,17 +10,27 @@ var saveThree = $('.save-three');
 var saveFour = $('.save-four');
 var saveFive = $('.save-five');
 
-var userSavedNine = $('input[type="text-9"]');
-var userSavedTen = $('input[type="text-10"]');
-var userSavedEleven = $('input[type="text-11"]');
-var userSavedTwelve = $('input[type="text-12"]');
-var userSavedOne = $('input[type="text-1"]');
-var userSavedTwo = $('input[type="text-2"]');
-var userSavedThree = $('input[type="text-3"]');
-var userSavedFour = $('input[type="text-4"]');
-var userSavedFive = $('input[type="text-5"]');
+var userSavedNine = $('input[type="text-9"]').show();
+var userSavedTen = $('input[type="text-10"]').show();
+var userSavedEleven = $('input[type="text-11"]').show();
+var userSavedTwelve = $('input[type="text-12"]').show();
+var userSavedOne = $('input[type="text-1"]').show();
+var userSavedTwo = $('input[type="text-2"]').show();
+var userSavedThree = $('input[type="text-3"]').show();
+var userSavedFour = $('input[type="text-4"]').show();
+var userSavedFive = $('input[type="text-5"]').show();
 
-var userDisplayNine = document.querySelector(".form-output-9");
+var userDisplayNine = $(".form-output-9").hide();
+var userDisplayTen = $(".form-output-10").hide();
+var userDisplayEleven = $(".form-output-11").hide();
+var userDisplayTwelve = $(".form-output-12").hide();
+var userDisplayOne = $(".form-output-1").hide();
+var userDisplayTwo = $(".form-output-2").hide();
+var userDisplayThree = $(".form-output-3").hide();
+var userDisplayFour= $(".form-output-4").hide();
+var userDisplayFive = $(".form-output-5").hide();
+
+
 
 var userInputNine = [];
 var userInputTen = [];
@@ -39,22 +49,22 @@ var userInputFive = [];
 //----Saves user input into local storage
 
 
-function displayUserSaved() {
-var displayNine = localStorage.getItem("saved-9")
-
-userDisplayNine.text(displayNine);
-}
 
 
 saveNine.on('click', function(event) {
     event.preventDefault();
-    $.each(userSavedNine, function() {
-        
-        userInputNine.push($(this).val())
+
+    $.each(userSavedNine, function() {                               //"#20B2AA"
+    userInputNine.push($(this).val())
         localStorage.setItem("saved-9", userInputNine);
-        displayUserSaved();
-    }
-)});
+            var displayNine = localStorage.getItem("saved-9")
+            userDisplayNine.text(displayNine);
+        $('.form-output-9').css("background-color", "blue").show();
+        $('input[type="text-9"]').hide();
+
+        }
+    
+    )});
 
 //----------------------------------------------------------10-o-clock------------------------------------//
 //----Saves user input into local storage
