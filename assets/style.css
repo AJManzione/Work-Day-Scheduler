@@ -1,14 +1,9 @@
-
-
-
 * {
     padding: 0%;
     margin: 0%;
     font-family:Arvo;
     box-sizing: border-box;
     }
-
-
 
 .jumbotron {
     display: flex;
@@ -33,8 +28,7 @@
     font-size: 30px;
 }
 
-
-.form-input{
+input{
     width: 83%;
     height: 100%;
     border: none;
@@ -43,20 +37,14 @@
     padding-left: 10px;
 }
 
-
-
-
 .container p {
     display: flex;
     width: 10%;
     height: 100%;
     align-items: center;
     justify-content: center;
-    background-color:white;
-
-    
+    background-color:white;   
 }
-
 
 button {
     font-size: 30px;
@@ -82,8 +70,6 @@ button {
     width: 100%;
     height: 10%;
 }
-
-
         
 .container {
     padding-top: 10px;
