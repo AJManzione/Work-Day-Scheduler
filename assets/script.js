@@ -1,10 +1,10 @@
-// Displays the current time in the format of day of the week, month and day of the month, and year
+// Displays the current time in the format of day of the week, month and day of the month, and year - - - 
 $("#date-my").text(moment().format("dddd, MMMM Do YYYY"));
 
 // Gets the current hour in military time - - - 
     var time = moment().format("H")
 
-
+// iterates through all the ID's on the HTML page and compares them to the current time (used military time for ease) stlyes elements 
      for (i = 9; i <= 17; i++) {
         var styling = document.getElementById(i) 
         if (i < time) {
