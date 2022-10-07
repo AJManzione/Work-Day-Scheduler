@@ -112,8 +112,6 @@
           </li>
         </ul>
  ```
-![Alt Text](/assets/images/password.png)
-
 
 ## License
 
